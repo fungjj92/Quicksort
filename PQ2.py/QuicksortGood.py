@@ -39,8 +39,6 @@ def partition(array, start, end):
             array[j], array[i] = array[i], array[j]
             i += 1
     array[start], array[i-1] = array[i-1], array[start]
-    print "After: {} Pivot: {} ({})".format(array[start:end], pivot, array[pivot])
-    print ""
     return i-1
 
 
